@@ -1,0 +1,30 @@
+.bg_contact {
+    background-color: var(--bg-two)
+}
+
+.bg_contact h1 {
+    margin: 0;
+}
+
+.bg_contact .btn-common {
+    margin: 2rem;
+}
+
+.p20 {
+    padding: 20rem;
+}
+
+.bg_contact .buttons {
+    display: inline-flex;
+}
+
+.buttons a {
+    color: #111;
+    display: flex;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+}
