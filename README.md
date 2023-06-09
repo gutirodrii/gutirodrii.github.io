@@ -10,6 +10,4 @@ _Proximamente..._
 
 **Relizado por gutirodrii**
 
-
-
 _David Gutierrez Rodriguez_
