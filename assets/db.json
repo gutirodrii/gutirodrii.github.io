@@ -2,43 +2,53 @@
   "skills": [
     {
       "name": "HTML",
-      "description": "HTML es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Se utiliza para definir la estructura de los elementos y su presentación básica."
+      "description": "HTML es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Se utiliza para definir la estructura de los elementos y su presentación básica.",
+      "state": true
     },
     {
       "name": "CSS",
-      "description": "CSS es un lenguaje utilizado para describir la apariencia y el formato de un documento HTML. Se utiliza para definir el estilo, diseño y presentación visual de los elementos en una página web."
+      "description": "CSS es un lenguaje utilizado para describir la apariencia y el formato de un documento HTML. Se utiliza para definir el estilo, diseño y presentación visual de los elementos en una página web.",
+      "state": false
     },
     {
       "name": "JavaScript",
-      "description": "JavaScript es un lenguaje de programación interpretado que se utiliza principalmente para crear interactividad en las páginas web. Permite agregar comportamiento dinámico a los elementos de una página y manipular su contenido en tiempo real."
+      "description": "JavaScript es un lenguaje de programación interpretado que se utiliza principalmente para crear interactividad en las páginas web. Permite agregar comportamiento dinámico a los elementos de una página y manipular su contenido en tiempo real.",
+      "state": false
     },
     {
       "name": "GIT",
-      "description": "Git es un sistema de control de versiones distribuido utilizado para el seguimiento de cambios en proyectos de software. Permite a los desarrolladores colaborar, realizar un seguimiento de las modificaciones y fusionar el trabajo de múltiples personas en un proyecto."
+      "description": "Git es un sistema de control de versiones distribuido utilizado para el seguimiento de cambios en proyectos de software. Permite a los desarrolladores colaborar, realizar un seguimiento de las modificaciones y fusionar el trabajo de múltiples personas en un proyecto.",
+      "state": false
     },
     {
       "name": "Node",
-      "description": "Node.js es un entorno de tiempo de ejecución de JavaScript basado en el motor V8 de Google Chrome. Permite ejecutar JavaScript en el servidor y facilita la creación de aplicaciones web escalables y de alto rendimiento."
+      "description": "Node.js es un entorno de tiempo de ejecución de JavaScript basado en el motor V8 de Google Chrome. Permite ejecutar JavaScript en el servidor y facilita la creación de aplicaciones web escalables y de alto rendimiento.",
+      "state": false
     },
     {
       "name": "React",
-      "description": "React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reutilizables. Se utiliza para crear componentes web reactivos y permite construir aplicaciones de una sola página (SPA) de manera eficiente."
+      "description": "React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reutilizables. Se utiliza para crear componentes web reactivos y permite construir aplicaciones de una sola página (SPA) de manera eficiente.",
+      "state": false
     },
     {
       "name": "MongoDB",
-      "description": "MongoDB es una base de datos NoSQL orientada a documentos. Almacena datos en formato BSON (Binary JSON) y se caracteriza por ser flexible y escalable. Es ampliamente utilizado en el desarrollo de aplicaciones web modernas."
+      "description": "MongoDB es una base de datos NoSQL orientada a documentos. Almacena datos en formato BSON (Binary JSON) y se caracteriza por ser flexible y escalable. Es ampliamente utilizado en el desarrollo de aplicaciones web modernas.",
+      "state": false
     },
     {
       "name": "NextJS",
-      "description": "Next.js es un framework de desarrollo web de React que permite construir aplicaciones web rápidas y escalables. Proporciona renderizado híbrido, enrutamiento sencillo y recarga en caliente para una experiencia de desarrollo eficiente."
+      "description": "Next.js es un framework de desarrollo web de React que permite construir aplicaciones web rápidas y escalables. Proporciona renderizado híbrido, enrutamiento sencillo y recarga en caliente para una experiencia de desarrollo eficiente.",
+      "state": false
     },
     {
       "name": "TypeScript",
-      "description": "TypeScript es un superconjunto de JavaScript que agrega tipado estático opcional y características adicionales al lenguaje. Proporciona verificación de tipos durante el desarrollo, lo que puede ayudar a detectar errores y mejorar la calidad del código."
+      "description": "TypeScript es un superconjunto de JavaScript que agrega tipado estático opcional y características adicionales al lenguaje. Proporciona verificación de tipos durante el desarrollo, lo que puede ayudar a detectar errores y mejorar la calidad del código.",
+      "state": false
     },
     {
       "name": "AWS",
-      "description": "AWS es una plataforma de servicios en la nube ofrecida por Amazon. Proporciona una amplia gama de servicios y herramientas para almacenamiento, cómputo, redes, bases de datos, aprendizaje automático y mucho más, permitiendo a los desarrolladores y empresas crear y escalar aplicaciones en la nube."
+      "description": "AWS es una plataforma de servicios en la nube ofrecida por Amazon. Proporciona una amplia gama de servicios y herramientas para almacenamiento, cómputo, redes, bases de datos, aprendizaje automático y mucho más, permitiendo a los desarrolladores y empresas crear y escalar aplicaciones en la nube.",
+      "state": false
     }
   ],
   "projects": [
@@ -73,13 +83,14 @@
       "img": " "
     }
   ],
-  "aboutme": "",
+  "aboutme": "¡Hola! Soy David, un programador junior apasionado por el desarrollo de software. Con tan solo 20 años, he estado inmerso en el mundo de la programación durante los últimos 3 años, buscando constantemente mejorar mis habilidades y conocimientos.",
+  "aboutme2": "Mi enfoque principal se centra en FullStack. Aunque tambien he programado en otros campos, en Python como data science, creando proyectos personales, hasta Flutter como ux design creando una aplicacion multiplataforma con Firebase. Me siento comodo tanto en Front-end, como en Back-end.",
   "carrousel": [
-    {"name": "Compromiso"},
-    {"name": "Competencia"},
-    {"name": "Creatividad"},
-    {"name": "Constancia"},
-    {"name": "Proactividad"},
-    {"name": "Inquietud"}
+    { "name": "Compromiso" },
+    { "name": "Competencia" },
+    { "name": "Creatividad" },
+    { "name": "Constancia" },
+    { "name": "Proactividad" },
+    { "name": "Inquietud" }
   ]
 }

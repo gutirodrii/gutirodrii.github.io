@@ -15,11 +15,17 @@ function render() {
     skillsDiv.innerHTML += `<button id="btn-skills-info" class="btn-common">${skill.name}</button>`;
   });
   const botones = document.querySelectorAll("#btn-skills-info");
+
   botones.forEach((boton) => {
     boton.addEventListener('click', () => {
       const skillname = db.skills.find((skill)=> skill.name === boton.textContent);
+      debugger
+
       if(skillname){
         skillinfoDiv.innerHTML = `${skillname.description}`;
+        skillname.state = true;
+        
+        resetButtonState();
       }
     });
   });
@@ -63,6 +69,8 @@ function render() {
     </div>`;
   });
 }
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   var typed = new Typed("#dev-text", {
