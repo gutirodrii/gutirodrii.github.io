@@ -1,5 +1,6 @@
 const skillsDiv = document.getElementById("skills-container");
 const galleryDiv = document.getElementById("gallery");
+const skillinfoDiv = document.getElementById("skill-info");
 
 function render() {
   // carrousel
@@ -11,8 +12,19 @@ function render() {
   // skills
   skillsDiv.innerHTML = "";
   db.skills.forEach((skill) => {
-    skillsDiv.innerHTML += `<button class="btn-common">${skill.name}</button>`;
+    skillsDiv.innerHTML += `<button id="btn-skills-info" class="btn-common">${skill.name}</button>`;
   });
+  const botones = document.querySelectorAll("#btn-skills-info");
+  botones.forEach((boton) => {
+    boton.addEventListener('click', () => {
+      const skillname = db.skills.find((skill)=> skill.name === boton.textContent);
+      if(skillname){
+        skillinfoDiv.innerHTML = `${skillname.description}`;
+      }
+    });
+  });
+  
+
   //projects
   const projects = getCurrentProjects();
   const firstProject = projects[0];
@@ -52,10 +64,10 @@ function render() {
   });
 }
 
-document.addEventListener(("DOMContentLoaded"), ()=>{
-    var typed = new Typed('#dev-text', {
-        strings: ['Developer.', 'Creator.', 'Designer.'],
-        typeSpeed: 50,
-        loop:true
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  var typed = new Typed("#dev-text", {
+    strings: ["Developer.", "Creator.", "Designer."],
+    typeSpeed: 50,
+    loop: true,
+  });
 });
