@@ -142,6 +142,9 @@ a {
     cursor: pointer;
 }
 
+.btn-common:hover{
+    background-color: #33E459;
+}
 .section_one .buttons .btn-common {
     margin-right: 2rem;
 }

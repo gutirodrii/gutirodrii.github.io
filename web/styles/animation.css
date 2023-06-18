@@ -6,13 +6,14 @@
   border-bottom: 1px solid var(--gray);
 }
 
+
 @keyframes scroll {
   0% {
     transform: translateX(0%)
   }
 
   100% {
-    transform: translateX(-50%)
+    transform: translateX(-100%)
   }
 }
 
@@ -26,7 +27,7 @@
 }
 
 
-.slider::after {
+/* .slider::after {
   right: 0;
   top: 0;
   -webkit-transform: rotateZ(180deg);
@@ -36,7 +37,7 @@
 .slider::before {
   left: 0;
   top: 0;
-}
+} */
 
 .slider .slide-track {
   -webkit-animation: scroll 60s linear infinite;

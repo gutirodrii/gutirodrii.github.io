@@ -2,6 +2,12 @@ const skillsDiv = document.getElementById("skills-container");
 const galleryDiv = document.getElementById("gallery");
 
 function render() {
+  // carrousel
+  var res = ``;
+  for (let index = 0; index < 10; index++) {
+    res += carrousel();
+  }
+  slidetrack.innerHTML = `${res}`;
   // skills
   skillsDiv.innerHTML = "";
   db.skills.forEach((skill) => {
