@@ -55,32 +55,32 @@
     {
       "name": "Mi proyecto 1",
       "skills": ["HTML", "CSS", "JAVASCRIPT"],
-      "img": " "
+      "img": "/assets/images/shop.svg"
     },
     {
       "name": "Mi proyecto 2",
       "skills": ["HTML", "CSS", "JAVASCRIPT"],
-      "img": " "
+      "img": "/assets/images/shop.svg"
     },
     {
       "name": "Mi proyecto 3",
       "skills": ["HTML", "CSS", "JAVASCRIPT"],
-      "img": " "
+      "img": "/assets/images/perfilpy.jpeg"
     },
     {
       "name": "Mi proyecto 4",
       "skills": ["HTML", "CSS", "JAVASCRIPT"],
-      "img": " "
+      "img": "/assets/images/shop.svg"
     },
     {
       "name": "Mi proyecto 5",
       "skills": ["HTML", "CSS", "JAVASCRIPT"],
-      "img": " "
+      "img": " /assets/images/shop.svg"
     },
     {
       "name": "Mi proyecto 6",
       "skills": ["HTML", "CSS", "JAVASCRIPT"],
-      "img": " "
+      "img": "/assets/images/shop.svg"
     }
   ],
   "aboutme": "¡Hola! Soy David, un programador junior apasionado por el desarrollo de software. Con tan solo 20 años, he estado inmerso en el mundo de la programación durante los últimos 3 años, buscando constantemente mejorar mis habilidades y conocimientos.",
