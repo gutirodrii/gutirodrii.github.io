@@ -17,19 +17,19 @@ function render() {
   const botones = document.querySelectorAll("#btn-skills-info");
 
   botones.forEach((boton) => {
-    boton.addEventListener('click', () => {
-      const skillname = db.skills.find((skill)=> skill.name === boton.textContent);
-      debugger
+    boton.addEventListener("click", () => {
+      const skillname = db.skills.find(
+        (skill) => skill.name === boton.textContent
+      );
 
-      if(skillname){
+      if (skillname) {
         skillinfoDiv.innerHTML = `${skillname.description}`;
         skillname.state = true;
-        
+
         resetButtonState();
       }
     });
   });
-  
 
   //projects
   const projects = getCurrentProjects();
@@ -37,17 +37,20 @@ function render() {
   if (!firstProject) {
     return;
   }
+
   galleryDiv.innerHTML = `
-        <div class="img-one d-flex-p-b">
-                <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <div class="section-project">
-                    <h3>${firstProject.name}</h3>
-                    ${print_languages(firstProject)}
-                </div>
+        <div class="img-one d-flex-p-b" style="background-image: url('${
+          firstProject.img
+        }')";>
+            <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div class="section-project">
+                <h3>${firstProject.name}</h3>
+                ${print_languages(firstProject)}
             </div>
-            <div class="half-width" id="projects-container">
-                
-            </div>
+        </div>
+        <div class="half-width" id="projects-container">
+            
+        </div>
   `;
   function print_languages(data) {
     let result = "";
@@ -58,9 +61,12 @@ function render() {
   }
   const projectsDiv = document.getElementById("projects-container");
   const secondzone = projects.slice(1, 3);
+
   secondzone.forEach((project) => {
     projectsDiv.innerHTML += `
-    <div class="full-height d-flex-p-b">
+    <div class="full-height d-flex-p-b" style="background-image: url('${
+      project.img
+    }')";>
         <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         <div class="section-project">
             <h3>${project.name}</h3>
@@ -69,8 +75,6 @@ function render() {
     </div>`;
   });
 }
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   var typed = new Typed("#dev-text", {
