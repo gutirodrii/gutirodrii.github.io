@@ -225,11 +225,11 @@
 /* Aquí van las reglas CSS para pantallas extra grandes */
 @media (min-width: 1200px) {
     .bg-about {
-        background: radial-gradient(circle farthest-side at left center, #33E459 -2%, #FFFFFF 10%);
+        background: radial-gradient(circle farthest-side at left center, #33E459 -2%, var(--primary) 10%);
 
     }
     .bg-projects {
-        background: radial-gradient(circle farthest-side at right center, #33E459 -3%, #FFFFFF 10%);
+        background: radial-gradient(circle farthest-side at right center, #33E459 -3%, var(--primary) 10%);
     }
     .section {
         margin-left: 25rem;

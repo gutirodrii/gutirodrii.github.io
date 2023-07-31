@@ -1,185 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porfolio gutirodrii</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/animation.css">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/monument-extended"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-</head>
-
-<body class="section-bg">
+  <body class="section-bg">
+    <div class="circle"></div>
     <!-- navbar  -->
     <nav>
-        <div class="navbar-left">
-            <img src="assets/images/disrup3logo.png" alt="logo" class="logo">
-        </div>
-        <div class="navbar-right">
-            <div id="welcome-message"></div>
-            <ul>
-                <li class="navbar-email">gutirodriidev@gmail.com</li>
-                <li class="navbar-number">
-                    +34 674151145
-                </li>
-            </ul>
-        </div>
+      <div class="navbar-left">
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          class="logo"
+          viewBox="0 0 1537.000000 341.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <g
+            transform="translate(0.000000,341.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M4582 2990 c-400 -51 -711 -301 -778 -625 -34 -165 -5 -390 69 -530
+40 -76 153 -191 232 -237 154 -89 274 -120 593 -153 136 -14 273 -32 304 -40
+117 -30 191 -84 235 -173 25 -51 28 -68 28 -157 0 -124 -23 -184 -96 -249 -81
+-73 -200 -106 -382 -106 -128 0 -233 22 -333 70 -142 68 -229 167 -255 290 -6
+28 -18 54 -28 59 -16 9 -371 -4 -400 -14 -19 -7 -8 -129 20 -220 66 -215 205
+-373 424 -480 204 -99 398 -141 615 -132 470 20 806 248 891 605 18 74 20 109
+16 232 -5 163 -19 227 -74 340 -52 108 -170 223 -284 279 -156 75 -227 90
+-619 131 -251 27 -326 50 -412 128 -62 56 -88 120 -88 218 0 66 4 89 26 132
+50 100 166 179 307 209 106 22 313 14 388 -16 120 -46 188 -114 233 -229 l22
+-57 190 2 c237 3 234 3 234 52 0 60 -36 186 -75 260 -83 157 -260 299 -455
+364 -135 45 -389 67 -548 47z"
+            />
+            <path
+              d="M313 2973 c-10 -4 -13 -222 -13 -1046 0 -977 1 -1048 19 -1132 43
+-210 138 -329 312 -394 255 -95 737 -117 1009 -45 173 45 288 112 406 237 153
+160 210 317 245 668 16 161 -2 855 -26 989 -33 184 -99 320 -218 446 -153 163
+-327 244 -582 274 -90 10 -1128 13 -1152 3z m1137 -447 c175 -57 281 -165 324
+-332 47 -183 48 -889 1 -1092 -40 -171 -148 -282 -330 -339 -88 -27 -338 -24
+-450 6 -107 29 -146 56 -182 128 l-28 58 -3 757 c-1 417 1 772 6 790 5 22 16
+35 33 40 13 4 148 6 299 4 231 -2 284 -6 330 -20z"
+            />
+            <path
+              d="M2816 2964 c-14 -14 -16 -147 -16 -1319 0 -1172 2 -1305 16 -1319 23
+-24 435 -24 458 0 14 14 16 147 16 1319 0 1172 -2 1305 -16 1319 -13 14 -48
+16 -229 16 -181 0 -216 -2 -229 -16z"
+            />
+            <path
+              d="M6670 2969 c-203 -24 -324 -93 -389 -223 -69 -138 -65 -61 -69 -1292
+-2 -1009 -1 -1113 13 -1128 24 -24 436 -24 459 0 14 14 16 72 16 495 0 447 1
+480 18 487 9 4 99 7 199 7 169 0 184 -1 202 -20 10 -11 117 -207 236 -435 283
+-542 282 -539 308 -545 12 -3 132 -4 267 -3 219 3 245 5 248 20 2 9 -30 76
+-71 150 -72 129 -268 481 -409 738 -38 69 -70 136 -71 149 -2 21 9 31 71 65
+99 55 161 107 233 196 100 123 152 246 171 412 20 172 -21 379 -107 535 -53
+95 -206 246 -300 295 -173 90 -289 108 -670 107 -154 -1 -314 -5 -355 -10z
+m663 -434 c123 -32 193 -89 248 -201 33 -66 34 -72 34 -189 0 -102 -4 -129
+-23 -178 -46 -113 -138 -200 -252 -235 -77 -24 -615 -26 -630 -2 -6 9 -10 148
+-10 330 0 310 1 316 24 365 50 107 101 124 361 125 138 0 207 -4 248 -15z"
+            />
+            <path
+              d="M8632 2972 c-10 -7 -12 -195 -10 -968 l3 -959 23 -80 c77 -265 236
+-448 495 -570 410 -194 953 -112 1252 189 108 108 172 218 217 373 l23 78 3
+964 c2 775 0 966 -10 973 -7 4 -108 8 -225 8 -179 0 -214 -2 -227 -16 -14 -14
+-16 -111 -16 -918 0 -573 -4 -923 -10 -957 -44 -230 -240 -369 -519 -369 -267
+1 -443 117 -508 336 -16 54 -18 138 -21 984 -2 708 -6 926 -15 932 -16 10
+-439 10 -455 0z"
+            />
+            <path
+              d="M11256 2964 c-14 -14 -16 -147 -16 -1319 0 -1172 2 -1305 16 -1319
+13 -14 48 -16 227 -16 117 0 217 4 224 8 9 6 13 111 15 418 2 330 6 414 17
+427 12 15 47 17 315 17 405 0 516 17 691 108 106 55 239 191 293 302 76 155
+108 339 98 555 -12 270 -83 453 -230 600 -94 92 -159 133 -277 174 -157 55
+-240 61 -827 61 -469 0 -532 -2 -546 -16z m1073 -425 c175 -28 277 -135 313
+-329 16 -87 4 -283 -22 -358 -42 -121 -126 -195 -252 -223 -87 -19 -611 -20
+-630 -1 -10 10 -14 102 -16 420 -2 224 1 425 5 447 7 30 15 41 33 46 40 11
+499 10 569 -2z"
+            />
+            <path
+              d="M14205 2973 c-214 -26 -336 -76 -447 -181 -71 -67 -110 -128 -149
+-227 -53 -138 -79 -365 -43 -379 26 -10 354 -7 373 4 14 7 20 27 25 86 9 100
+40 180 86 224 53 51 120 70 251 70 184 0 288 -50 353 -171 33 -59 37 -116 23
+-269 l-8 -85 172 -83 c194 -94 183 -95 218 1 50 137 66 375 35 525 -44 217
+-183 369 -399 438 -135 43 -354 64 -490 47z"
+            />
+            <path
+              d="M14306 1882 c-6 -11 -66 -302 -66 -324 0 -14 27 -31 106 -68 160 -75
+217 -113 274 -184 66 -84 82 -130 83 -241 0 -77 -3 -99 -25 -147 -35 -75 -98
+-141 -167 -175 -48 -24 -71 -28 -162 -31 -135 -5 -197 11 -263 69 -54 48 -79
+92 -95 169 -6 30 -17 58 -24 62 -7 4 -98 8 -203 8 -157 0 -194 -3 -204 -15 -9
+-11 -10 -33 -2 -93 49 -362 268 -565 650 -603 306 -30 571 44 742 207 86 83
+133 159 172 284 20 66 23 95 23 235 0 136 -4 172 -23 239 -47 165 -110 252
+-242 339 -84 55 -527 277 -552 277 -9 0 -19 -4 -22 -8z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="navbar-right">
+        <div id="welcome-message"></div>
+        <ul>
+          <li class="navbar-email">gutirodriidev@gmail.com</li>
+          <li class="navbar-number">+34 674151145</li>
+          <li class="btn-darkmode">
+            <input type="checkbox" id="darkmode-toggle" />
+            <label for="darkmode-toggle">
+              <svg
+                version="1.1"
+                class="sun"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 496 496"
+                style="enable-background: new 0 0 496 496"
+                xml:space="preserve"
+              >
+                <rect
+                  x="152.994"
+                  y="58.921"
+                  transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                  width="40.001"
+                  height="16"
+                />
+                <rect
+                  x="46.9"
+                  y="164.979"
+                  transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
+                  width="40.001"
+                  height="16"
+                />
+                <rect
+                  x="46.947"
+                  y="315.048"
+                  transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
+                  width="40.001"
+                  height="16"
+                />
+
+                <rect
+                  x="164.966"
+                  y="409.112"
+                  transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
+                  width="16"
+                  height="39.999"
+                />
+
+                <rect
+                  x="303.031"
+                  y="421.036"
+                  transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
+                  width="40.001"
+                  height="16"
+                />
+
+                <rect
+                  x="409.088"
+                  y="315.018"
+                  transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
+                  width="40.001"
+                  height="16"
+                />
+
+                <rect
+                  x="409.054"
+                  y="165.011"
+                  transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
+                  width="40.001"
+                  height="16"
+                />
+                <rect
+                  x="315.001"
+                  y="46.895"
+                  transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
+                  width="16"
+                  height="39.999"
+                />
+                <path
+                  d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+				c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"
+                />
+                <rect x="240" width="16" height="72" />
+                <rect
+                  x="62.097"
+                  y="90.096"
+                  transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
+                  width="71.999"
+                  height="16"
+                />
+                <rect y="240" width="72" height="16" />
+
+                <rect
+                  x="90.091"
+                  y="361.915"
+                  transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
+                  width="16"
+                  height="71.999"
+                />
+                <rect x="240" y="424" width="16" height="72" />
+
+                <rect
+                  x="361.881"
+                  y="389.915"
+                  transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
+                  width="71.999"
+                  height="16"
+                />
+                <rect x="424" y="240" width="72" height="16" />
+                <rect
+                  x="389.911"
+                  y="62.091"
+                  transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
+                  width="16"
+                  height="71.999"
+                />
+              </svg>
+              <svg
+                version="1.1"
+                class="moon"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 49.739 49.739"
+                style="enable-background: new 0 0 49.739 49.739"
+                xml:space="preserve"
+              >
+                <path
+                  d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+       c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+       c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+       C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+       c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+       c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"
+                />
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- banner principal -->
     <section class="section display_two">
-        <div class="section_one mt-5 mb-5">
-            <div class="title_web ">
-                <h1>FULL STACK</h1>
-                <span class="section_title_two">
-                    <img src="assets/images/buttoncode.svg">
-                    <h1 id="dev-text"></h1>
-                </span>
-            </div>
-            <div class="subtitle">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo ultricies sapien eu
-                    pulvinar. </p>
-            </div>
-            <div class="buttons">
-                <button class="btn-common">DOWNLOAD CV</button>
-                <a href="mailto:tuemail@gmail.com" class="btn-common bg-gren">LET'S TALK!</a>
-            </div>
+      <div class="section_one mt-5 mb-5">
+        <div class="title_web">
+          <h1>FULL STACK</h1>
+          <span class="section_title_two">
+            <svg
+              width="165"
+              height="75"
+              viewBox="0 0 165 75"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="2"
+                y="8"
+                width="161"
+                height="56"
+                rx="28"
+                stroke="var(--color-text)"
+                stroke-width="4"
+              />
+              <path
+                d="M61.4 48.3L49.9 36.95L61.4 25.6H68.6L57.05 36.95L68.6 48.3H61.4Z"
+                fill="var(--color-text)"
+              />
+              <path
+                d="M95.6 25.6H102.8L114.3 36.95L102.8 48.3H95.6L107.15 36.95L95.6 25.6Z"
+                fill="var(--color-text)"
+              />
+              <path
+                d="M89.29 19.5L81.25 53.61H76.3L84.34 19.5H89.29Z"
+                fill="var(--color-text)"
+              />
+            </svg>
+            <h1 id="dev-text"></h1>
+          </span>
         </div>
-        <div class="section_two social">
-            <a class="bg-primary btn-social">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a class="bg-primary btn-social">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a class="bg-primary btn-social">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+        <div class="subtitle">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            commodo ultricies sapien eu pulvinar.
+          </p>
         </div>
+        <div class="buttons">
+          <button class="btn-common">DOWNLOAD CV</button>
+          <a href="mailto:gutirodriidev@gmail.com" class="btn-common bg-gren"
+            >LET'S TALK!</a
+          >
+        </div>
+      </div>
+      <div class="section_two social">
+        <a class="bg-primary btn-social">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          class="bg-primary btn-social"
+          href="https://www.linkedin.com/in/davidgutierreez/"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a class="bg-primary btn-social" href="https://github.com/gutirodrii">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
     </section>
     <!-- fin del banner principal -->
 
     <!-- carrouse con animacion -->
     <div class="bg-about">
-        <div class="section-message">
-            <div class="slider">
-                <div id="slide-track" class="slide-track">
-                    
-                </div>
-            </div>
+      <div class="section-message">
+        <div class="slider">
+          <div id="slide-track" class="slide-track"></div>
         </div>
-        <!-- fin del carrusel con animacion -->
+      </div>
+      <!-- fin del carrusel con animacion -->
 
-        <!-- about -->
-        <section class="section display_two about ">
-            <div class="section_one  mt-5 mb-5">
-                <h1 class="title_about"><span class="color-green">.</span>About</h1>
-                <div class="display_two mt-5 center_flex">
-                    <img class="img_profile" src="assets/images/perfilpy.jpeg">
-                    <div class="section_lastname">
-                        <h5 class="last_name">gutirodrii</h5>
-                        <div class="display_two ">
-                            <a class="bg-primary btn-social">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a class="bg-primary btn-social">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a class="bg-primary btn-social">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <p id="about-me" class="mt-5"> Phasellus convallis purus at imperdiet lacinia. Integer
-                    <br> scelerisque gravida ex lobortis auctor. Suspendisse vel odio
-                    <br> non massa varius iaculis in ut ex. Etiam efficitur purus laoreet,
-                    <br> posuere felis eget, tincidunt ante.
-                </p>
+      <!-- about -->
+      <section class="section display_two about">
+        <div class="section_one mt-5 mb-5">
+          <h1 class="title_about"><span class="color-green">.</span>About</h1>
+          <div class="display_two mt-5 center_flex">
+            <img class="img_profile" src="assets/images/perfilpy.jpeg" />
+            <div class="section_lastname">
+              <h5 class="last_name">gutirodrii</h5>
+              <div class="display_two">
+                <a class="bg-primary btn-social">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  class="bg-primary btn-social"
+                  href="https://www.linkedin.com/in/davidgutierreez/"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  class="bg-primary btn-social"
+                  href="https://github.com/gutirodrii"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
             </div>
-            <div class="section_two languages mt-5 mb-5">
-                <div class="pt-19" id="skills-container"></div>
-                <p id="skill-info" class="mt-5"></p>
-            </div>
-        </section>
+          </div>
+          <p id="about-me" class="mt-5">
+            Phasellus convallis purus at imperdiet lacinia. Integer <br />
+            scelerisque gravida ex lobortis auctor. Suspendisse vel odio <br />
+            non massa varius iaculis in ut ex. Etiam efficitur purus laoreet,
+            <br />
+            posuere felis eget, tincidunt ante.
+          </p>
+        </div>
+        <div class="section_two languages mt-5 mb-5">
+          <div class="pt-19" id="skills-container"></div>
+          <p id="skill-info" class="mt-5"></p>
+        </div>
+      </section>
     </div>
 
     <!-- fin de about -->
 
     <!-- proyectos -->
     <div class="bg-projects">
-        <div class="section mt-5 mb-0">
-            <h1 class="title_about"><span class="color-green">.</span>Projects</h1>
-        </div>
-        <section class="section display_two mt-0">
-            <div class="gallery" id="gallery">
-            </div>
-        </section>
+      <div class="section mt-5 mb-0">
+        <h1 class="title_about"><span class="color-green">.</span>Projects</h1>
+      </div>
+      <section class="section display_two mt-0">
+        <div class="gallery" id="gallery"></div>
+      </section>
     </div>
-    <br>
+    <br />
     <!--fin proyectos -->
 
     <!-- seccion contact -->
     <section class="bg_contact mt-5">
-        <div class=" display_two p20 center">
-            <div class="title_web center_flex colum">
-                <h1>Let's work <br>
-                    together</h1>
-                <div class="subtitle">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque <br> commodo ultricies sapien eu
-                        pulvinar. </p>
-                </div>
-                <div class="buttons">
-                    <button class="btn-common">DOWNLOAD CV</button>
-                    <a href="mailto:tuemail@gmail.com" class="btn-common bg-gren">LET'S TALK!</a>
-                </div>
-            </div>
+      <div class="display_two p20 center">
+        <div class="title_web center_flex colum">
+          <h1>
+            Let's work <br />
+            together
+          </h1>
+          <div class="subtitle">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              <br />
+              commodo ultricies sapien eu pulvinar.
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="btn-common">DOWNLOAD CV</button>
+            <a href="mailto:gutirodriidev@gmail.com" class="btn-common bg-gren"
+              >LET'S TALK!</a
+            >
+          </div>
         </div>
+      </div>
     </section>
     <!-- fin seccion contact -->
 
-
     <footer class="bg_contact">
-        <div class="display_two section_footer">
-            <div class="w-50">
-                <p>©2023 <img class="logofooter" src="assets/images/disrup3logo.png"> All rights reserved.</p>
-            </div>
-            <div class="w-50 display_two">
-                <div class="display_two ">
-                    <a class="bg-primary btn-social">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a class="bg-primary btn-social">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a class="bg-primary btn-social">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="display_two section_footer">
+        <div class="w-50">
+          <p>
+            ©2023
+            <svg
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              class="logofooter"
+              viewBox="0 0 1537.000000 341.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <g
+                transform="translate(0.000000,341.000000) scale(0.100000,-0.100000)"
+                fill="#000000"
+                stroke="none"
+              >
+                <path
+                  d="M4582 2990 c-400 -51 -711 -301 -778 -625 -34 -165 -5 -390 69 -530
+40 -76 153 -191 232 -237 154 -89 274 -120 593 -153 136 -14 273 -32 304 -40
+117 -30 191 -84 235 -173 25 -51 28 -68 28 -157 0 -124 -23 -184 -96 -249 -81
+-73 -200 -106 -382 -106 -128 0 -233 22 -333 70 -142 68 -229 167 -255 290 -6
+28 -18 54 -28 59 -16 9 -371 -4 -400 -14 -19 -7 -8 -129 20 -220 66 -215 205
+-373 424 -480 204 -99 398 -141 615 -132 470 20 806 248 891 605 18 74 20 109
+16 232 -5 163 -19 227 -74 340 -52 108 -170 223 -284 279 -156 75 -227 90
+-619 131 -251 27 -326 50 -412 128 -62 56 -88 120 -88 218 0 66 4 89 26 132
+50 100 166 179 307 209 106 22 313 14 388 -16 120 -46 188 -114 233 -229 l22
+-57 190 2 c237 3 234 3 234 52 0 60 -36 186 -75 260 -83 157 -260 299 -455
+364 -135 45 -389 67 -548 47z"
+                />
+                <path
+                  d="M313 2973 c-10 -4 -13 -222 -13 -1046 0 -977 1 -1048 19 -1132 43
+-210 138 -329 312 -394 255 -95 737 -117 1009 -45 173 45 288 112 406 237 153
+160 210 317 245 668 16 161 -2 855 -26 989 -33 184 -99 320 -218 446 -153 163
+-327 244 -582 274 -90 10 -1128 13 -1152 3z m1137 -447 c175 -57 281 -165 324
+-332 47 -183 48 -889 1 -1092 -40 -171 -148 -282 -330 -339 -88 -27 -338 -24
+-450 6 -107 29 -146 56 -182 128 l-28 58 -3 757 c-1 417 1 772 6 790 5 22 16
+35 33 40 13 4 148 6 299 4 231 -2 284 -6 330 -20z"
+                />
+                <path
+                  d="M2816 2964 c-14 -14 -16 -147 -16 -1319 0 -1172 2 -1305 16 -1319 23
+-24 435 -24 458 0 14 14 16 147 16 1319 0 1172 -2 1305 -16 1319 -13 14 -48
+16 -229 16 -181 0 -216 -2 -229 -16z"
+                />
+                <path
+                  d="M6670 2969 c-203 -24 -324 -93 -389 -223 -69 -138 -65 -61 -69 -1292
+-2 -1009 -1 -1113 13 -1128 24 -24 436 -24 459 0 14 14 16 72 16 495 0 447 1
+480 18 487 9 4 99 7 199 7 169 0 184 -1 202 -20 10 -11 117 -207 236 -435 283
+-542 282 -539 308 -545 12 -3 132 -4 267 -3 219 3 245 5 248 20 2 9 -30 76
+-71 150 -72 129 -268 481 -409 738 -38 69 -70 136 -71 149 -2 21 9 31 71 65
+99 55 161 107 233 196 100 123 152 246 171 412 20 172 -21 379 -107 535 -53
+95 -206 246 -300 295 -173 90 -289 108 -670 107 -154 -1 -314 -5 -355 -10z
+m663 -434 c123 -32 193 -89 248 -201 33 -66 34 -72 34 -189 0 -102 -4 -129
+-23 -178 -46 -113 -138 -200 -252 -235 -77 -24 -615 -26 -630 -2 -6 9 -10 148
+-10 330 0 310 1 316 24 365 50 107 101 124 361 125 138 0 207 -4 248 -15z"
+                />
+                <path
+                  d="M8632 2972 c-10 -7 -12 -195 -10 -968 l3 -959 23 -80 c77 -265 236
+-448 495 -570 410 -194 953 -112 1252 189 108 108 172 218 217 373 l23 78 3
+964 c2 775 0 966 -10 973 -7 4 -108 8 -225 8 -179 0 -214 -2 -227 -16 -14 -14
+-16 -111 -16 -918 0 -573 -4 -923 -10 -957 -44 -230 -240 -369 -519 -369 -267
+1 -443 117 -508 336 -16 54 -18 138 -21 984 -2 708 -6 926 -15 932 -16 10
+-439 10 -455 0z"
+                />
+                <path
+                  d="M11256 2964 c-14 -14 -16 -147 -16 -1319 0 -1172 2 -1305 16 -1319
+13 -14 48 -16 227 -16 117 0 217 4 224 8 9 6 13 111 15 418 2 330 6 414 17
+427 12 15 47 17 315 17 405 0 516 17 691 108 106 55 239 191 293 302 76 155
+108 339 98 555 -12 270 -83 453 -230 600 -94 92 -159 133 -277 174 -157 55
+-240 61 -827 61 -469 0 -532 -2 -546 -16z m1073 -425 c175 -28 277 -135 313
+-329 16 -87 4 -283 -22 -358 -42 -121 -126 -195 -252 -223 -87 -19 -611 -20
+-630 -1 -10 10 -14 102 -16 420 -2 224 1 425 5 447 7 30 15 41 33 46 40 11
+499 10 569 -2z"
+                />
+                <path
+                  d="M14205 2973 c-214 -26 -336 -76 -447 -181 -71 -67 -110 -128 -149
+-227 -53 -138 -79 -365 -43 -379 26 -10 354 -7 373 4 14 7 20 27 25 86 9 100
+40 180 86 224 53 51 120 70 251 70 184 0 288 -50 353 -171 33 -59 37 -116 23
+-269 l-8 -85 172 -83 c194 -94 183 -95 218 1 50 137 66 375 35 525 -44 217
+-183 369 -399 438 -135 43 -354 64 -490 47z"
+                />
+                <path
+                  d="M14306 1882 c-6 -11 -66 -302 -66 -324 0 -14 27 -31 106 -68 160 -75
+217 -113 274 -184 66 -84 82 -130 83 -241 0 -77 -3 -99 -25 -147 -35 -75 -98
+-141 -167 -175 -48 -24 -71 -28 -162 -31 -135 -5 -197 11 -263 69 -54 48 -79
+92 -95 169 -6 30 -17 58 -24 62 -7 4 -98 8 -203 8 -157 0 -194 -3 -204 -15 -9
+-11 -10 -33 -2 -93 49 -362 268 -565 650 -603 306 -30 571 44 742 207 86 83
+133 159 172 284 20 66 23 95 23 235 0 136 -4 172 -23 239 -47 165 -110 252
+-242 339 -84 55 -527 277 -552 277 -9 0 -19 -4 -22 -8z"
+                />
+              </g>
+            </svg>
+            All rights reserved.
+          </p>
         </div>
-    </footer>    
-    
+        <div class="w-50 display_two">
+          <div class="display_two">
+            <a class="bg-primary btn-social">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              class="bg-primary btn-social"
+              href="https://www.linkedin.com/in/davidgutierreez/"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              class="bg-primary btn-social"
+              href="https://github.com/gutirodrii"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="scripts/data.js"></script>
     <script src="scripts/render.js"></script>
     <script src="scripts/load.js"></script>
-    <script src="scripts/welcome.js"></script>
+    <!-- <script src="scripts/welcome.js"></script> -->
     <script src="scripts/carrousel.js"></script>
     <script src="scripts/skills.js"></script>
+    <script src="scripts/mouse.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script>
+      window.onload = function () {
+        var enlaces = document.getElementsByTagName("a");
+        for (var i = 0; i < enlaces.length; i++) {
+          enlaces[i].setAttribute("target", "_blank");
+        }
+      };
+    </script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-</body>
-
+  </body>
 </html>

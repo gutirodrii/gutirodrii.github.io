@@ -41,7 +41,7 @@
 .section-project {
     width: 100%;
     z-index: 1;
-    color: #fff;
+    color: var(--color-text);
     padding: 2rem;
     box-sizing: border-box;
 }
@@ -53,7 +53,7 @@
 }
 
 .section-project .btn-common {
-    color: #fff;
+    color: var(--white);
     border: 2px solid #fff;
     margin-right: 2rem;
     background-color: #111;

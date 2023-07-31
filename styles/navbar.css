@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--gray);
-  padding: 0px 10rem 0px 10rem;
+  padding: 0px 5rem;
 }
 
 .menu {
@@ -14,10 +14,9 @@ nav {
   width: 15rem;
   line-height: 45px;
 }
-.navbar-right{
+.navbar-right {
   display: flex;
   align-items: center;
-  
 }
 
 .navbar-right ul {
@@ -47,8 +46,71 @@ nav {
 .navbar-email {
   margin-right: 12px;
 }
-
-
+.btn-darkmode {
+  display: contents;
+  width: 3rem;
+  height: 3rem;
+}
+.btn-darkmode label {
+  width: 10rem;
+  height: 4rem;
+  position: relative;
+  display: flex;
+  background: #ebebeb;
+  border-radius: 4rem;
+  box-shadow: inset 0px 10px 30px rgba(0, 0, 0, 0.4),
+    inset 0px -10px 30px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  &:after{
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    background: linear-gradient(180deg, #81fc9b,var(--secondary));
+    border-radius: 2rem;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+}
+.btn-darkmode label svg{
+  position: absolute;
+  width: 3rem;
+  z-index: 100;
+  &.sun{
+    top: .5rem;
+    left: .5rem;
+    fill: #fff;
+    transition: 0.3s;
+  }
+  &.moon{
+    top: .5rem;
+    right: .5rem;
+    fill: #7e7e7e;
+    transition: 0.3s;
+  }
+}
+.btn-darkmode input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  &:checked + label{
+    background: #242424;
+      &:after{
+        left: 2rem;
+        transform: translateX(100%);
+        background: linear-gradient(180deg, #777, #3a3a3a);
+    }
+  }
+  &:checked + label svg{
+    &.sun{
+      fill: #7e7e7e;
+    }
+    &.moon{
+      fill: #fff;
+    }
+  }
+}
 @media (max-width: 640px) {
   .menu {
     display: block;
