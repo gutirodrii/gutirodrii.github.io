@@ -44,7 +44,7 @@ function render() {
         <div class="img-one d-flex-p-b" style="background-image: url('${
           firstProject.img
         }')";>
-            <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a class="btona" href="/projects/?id=${firstProject._id}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             <div class="section-project">
                 <h3>${firstProject.name}</h3>
                 ${print_languages(firstProject)}
@@ -70,7 +70,7 @@ function render() {
     <div class="full-height d-flex-p-b" style="background-image: url('${
       project.img
     }')";>
-        <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a class="btona" href="/projects/?id=${project._id}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         <div class="section-project">
             <h3>${project.name}</h3>
             ${print_languages(project)}
@@ -78,7 +78,7 @@ function render() {
     </div>`;
   });
   //about
-  console.log(db.about[0].about1)
+
   about1.innerHTML = `${db.about[0].about1}`
   about2.innerHTML = `${db.about[0].about2}`
 }
