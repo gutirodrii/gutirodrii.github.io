@@ -1,5 +1,5 @@
 // const backendUrl = "http://127.0.0.1:5500";
-const backendUrl = "https://www.gutirodrii.site"
+const backendUrl = "https://portfolio-api-production-ff2e.up.railway.app"
 
 var projectIndex = 0;
 function getCurrentProjects() {
@@ -29,11 +29,39 @@ function nextProject() {
 
 // FUNCION LOAD CON ASYNC
 
-async function load() {
-  const url = `${backendUrl}/assets/db.json`;
+async function loadProjects(){
+  const url = `${backendUrl}/projects`;
   const response = await fetch(url);
-  const result = await response.json();
-  db = result;
+
+  return await response.json();
+}
+async function loadSkills(){
+  const url = `${backendUrl}/skills`;
+  const response = await fetch(url);
+
+  return await response.json();
+}
+
+async function loadCarrousel(){
+  const url = `${backendUrl}/carrousel`;
+  const response = await fetch(url);
+
+  return await response.json();
+
+}
+async function loadAbout(){
+  const url = `${backendUrl}/about`;
+  const response = await fetch(url);
+
+  return await response.json();
+
+}
+async function load() {
+  db.projects = await loadProjects();
+  db.skills = await loadSkills();
+  db.carrousel = await loadCarrousel();
+  db.about = await loadAbout();
+  console.log(db)
   render();
 }
 
