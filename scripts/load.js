@@ -1,4 +1,5 @@
-const backendUrl = "http://127.0.0.1:5500";
+// const backendUrl = "http://127.0.0.1:5500";
+const backendUrl = "https://www.gutirodrii.site"
 
 var projectIndex = 0;
 function getCurrentProjects() {
