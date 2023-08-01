@@ -41,7 +41,7 @@
 .section-project {
     width: 100%;
     z-index: 1;
-    color: var(--white);
+    color: var(--color-text);
     padding: 2rem;
     box-sizing: border-box;
 }
