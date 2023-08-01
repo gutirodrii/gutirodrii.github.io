@@ -61,7 +61,7 @@ async function load() {
   db.skills = await loadSkills();
   db.carrousel = await loadCarrousel();
   db.about = await loadAbout();
-  console.log(db)
+
   render();
 }
 
