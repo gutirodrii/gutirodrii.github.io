@@ -34,49 +34,50 @@ function render() {
   });
 
   //projects
-  const projects = getCurrentProjects();
-  const firstProject = projects[0];
-  if (!firstProject) {
-    return;
-  }
+  // const projects = getCurrentProjects();
+  // const firstProject = projects[0];
+  // if (!firstProject) {
+  //   return;
+  // }
 
-  galleryDiv.innerHTML = `
-        <div class="img-one d-flex-p-b" style="background-image: url('${
-          firstProject.img
-        }')";>
-            <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <div class="section-project">
-                <h3>${firstProject.name}</h3>
-                ${print_languages(firstProject)}
-            </div>
-        </div>
-        <div class="half-width" id="projects-container">
+  // galleryDiv.innerHTML = `
+  //       <div class="img-one d-flex-p-b" style="background-image: url('${
+  //         firstProject.img
+  //       }')";>
+  //           <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  //           <div class="section-project">
+  //               <h3>${firstProject.name}</h3>
+  //               ${print_languages(firstProject)}
+  //           </div>
+  //       </div>
+  //       <div class="half-width" id="projects-container">
             
-        </div>
-  `;
-  function print_languages(data) {
-    let result = ``;
-    if(data.skills)
-      data.skills.forEach((item) => {
-        result += `<button class="btn-common">${item}</button>\n`;
-      })
-    return result;
-  }
-  const projectsDiv = document.getElementById("projects-container");
-  const secondzone = projects.slice(1, 3);
+  //       </div>
+  // `;
+  // function print_languages(data) {
+  //   let result = ``;
+  //   if(data.skills)
+  //     data.skills.forEach((item) => {
+  //       result += `<button class="btn-common">${item}</button>\n`;
+  //     })
+  //   return result;
+  // }
+  // const projectsDiv = document.getElementById("projects-container");
+  // const secondzone = projects.slice(1, 3);
 
-  secondzone.forEach((project) => {
-    projectsDiv.innerHTML += `
-    <div class="full-height d-flex-p-b" style="background-image: url('${
-      project.img
-    }')";>
-        <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        <div class="section-project">
-            <h3>${project.name}</h3>
-            ${print_languages(project)}
-        </div>
-    </div>`;
-  });
+  // secondzone.forEach((project) => {
+  //   projectsDiv.innerHTML += `
+  //   <div class="full-height d-flex-p-b" style="background-image: url('${
+  //     project.img
+  //   }')";>
+  //       <a class="btona"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  //       <div class="section-project">
+  //           <h3>${project.name}</h3>
+  //           ${print_languages(project)}
+  //       </div>
+  //   </div>`;
+  // });
+  
   //about
   console.log(db.about[0].about1)
   about1.innerHTML = `${db.about[0].about1}`

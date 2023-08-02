@@ -292,3 +292,6 @@ footer .btn-social {
   );
   background-repeat: no-repeat;
 }
+.pointer-all{
+  pointer-events: all;
+}

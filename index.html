@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/projects.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/projectslider.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -304,9 +305,7 @@ m663 -434 c123 -32 193 -89 248 -201 33 -66 34 -72 34 -189 0 -102 -4 -129
           </span>
         </div>
         <div class="subtitle">
-          <p id="about-1">
-            
-          </p>
+          <p id="about-1"></p>
         </div>
         <div class="buttons">
           <button class="btn-common">DOWNLOAD CV</button>
@@ -391,7 +390,78 @@ m663 -434 c123 -32 193 -89 248 -201 33 -66 34 -72 34 -189 0 -102 -4 -129
         <h1 class="title_about"><span class="color-green">.</span>Projects</h1>
       </div>
       <section class="section display_two mt-0">
-        <div class="gallery" id="gallery"></div>
+        <div class="gallery" id="gallery">
+          <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-left"></use>
+                </svg>
+              </div>
+            </button>
+            <div class="cards__wrapper">
+              <div class="card current--card">
+                <div class="card__image">
+                  <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                </div>
+              </div>
+
+              <div class="card next--card">
+                <div class="card__image">
+                  <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                </div>
+              </div>
+
+              <div class="card previous--card">
+                <div class="card__image">
+                  <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                </div>
+              </div>
+            </div>
+            <button class="cardList__btn btn btn--right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+          <div class="infoList">
+            <div class="info__wrapper">
+              <div class="info current--info">
+                <h1 class="text name">Highlands</h1>
+                <div class="btn-div">
+                  <button class="btn-common shadow pointer-all">HTML</button>
+                  <button class="btn-common shadow pointer-all">CSS</button>
+                  <button class="btn-common shadow pointer-all">JS</button>
+                </div>
+                <p class="text description">The mountains are calling</p>
+              </div>
+
+              <div class="info next--info">
+                <h1 class="text name">Machu Pichu</h1>
+                <h4 class="text location">Peru</h4>
+                <p class="text description">Adventure is never far away</p>
+              </div>
+
+              <div class="info previous--info">
+                <h1 class="text name">Chamonix</h1>
+                <h4 class="text location">France</h4>
+                <p class="text description">Let your dreams come true</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="icons" style="display: none;">
+          <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                   style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+          </symbol>
+          <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                   style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+          </symbol>
+        </svg>
       </section>
     </div>
     <br />
@@ -547,6 +617,7 @@ m663 -434 c123 -32 193 -89 248 -201 33 -66 34 -72 34 -189 0 -102 -4 -129
     <script src="scripts/skills.js"></script>
     <script src="scripts/mouse.js"></script>
     <script src="scripts/theme.js"></script>
+    <script src="scripts/projectslider.js"></script>
     <script>
       window.onload = function () {
         var enlaces = document.getElementsByTagName("a");

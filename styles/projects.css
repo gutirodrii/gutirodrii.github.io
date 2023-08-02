@@ -1,9 +1,9 @@
-.gallery {
+/* .gallery {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
-}
+} */
 
 .half-width {
     width: 49%;
