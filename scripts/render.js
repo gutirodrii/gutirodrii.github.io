@@ -78,7 +78,7 @@ function render() {
     </div>`;
   });
   //about
-  console.log(db.about[0].about1)
+
   about1.innerHTML = `${db.about[0].about1}`
   about2.innerHTML = `${db.about[0].about2}`
 }
