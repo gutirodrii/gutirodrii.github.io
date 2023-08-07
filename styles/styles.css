@@ -23,7 +23,7 @@ html {
 
 * {
   font-family: "Poppins", sans-serif;
-    transition: .3s;
+    /* transition: .3s; */
 }
 
 body {
