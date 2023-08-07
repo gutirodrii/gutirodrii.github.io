@@ -202,9 +202,6 @@
         
     }
 
-    .title_web .section_title_two h1{
-        font-size: 60px;
-    }
     .section_lastname{
         display: flex;
         flex-direction: column;
@@ -235,7 +232,5 @@
         margin-left: 25rem;
         margin-right: 25rem;
     }
-    .title_web .section_title_two h1{
-        font-size: 60px;
-    }
+    
 }
