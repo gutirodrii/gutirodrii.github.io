@@ -3,13 +3,16 @@ const backendUrl = "https://portfolio-api-production-ff2e.up.railway.app"
 
 var projectIndex = 0;
 function getCurrentProjects() {
+  if(projectIndex > db.projects.length -3 ){
+    return db.projects.slice(projectIndex, projectIndex + 3).concat(db.projects.slice(0, 3));
+  }
   return db.projects.slice(projectIndex, projectIndex + 3);
 }
 function nextProject() {
-  projectIndex++;
-  if (projectIndex > db.projects.length - 3) {
+  if(projectIndex > db.projects.length - 1){
     projectIndex = 0;
   }
+  projectIndex++;
   render();
 }
 
