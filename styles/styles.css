@@ -119,6 +119,7 @@ g {
 
 .title_web h1 {
   font-family: "Monument Extended";
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   font-size: 100px;
