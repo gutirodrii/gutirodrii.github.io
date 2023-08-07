@@ -16,22 +16,23 @@ function render() {
   db.skills.forEach((skill) => {
     skillsDiv.innerHTML += `<button id="btn-skills-info" class="btn-common">${skill.name}</button>`;
   });
-  const botones = document.querySelectorAll("#btn-skills-info");
+  //description DISABLED
+  // const botones = document.querySelectorAll("#btn-skills-info");
 
-  botones.forEach((boton) => {
-    boton.addEventListener("click", () => {
-      const skillname = db.skills.find(
-        (skill) => skill.name === boton.textContent
-      );
+  // botones.forEach((boton) => {
+  //   boton.addEventListener("click", () => {
+  //     const skillname = db.skills.find(
+  //       (skill) => skill.name === boton.textContent
+  //     );
 
-      if (skillname) {
-        skillinfoDiv.innerHTML = `${skillname.description}`;
-        skillname.state = true;
+  //     if (skillname) {
+  //       skillinfoDiv.innerHTML = `${skillname.description}`;
+  //       skillname.state = true;
 
-        resetButtonState();
-      }
-    });
-  });
+  //       resetButtonState();
+  //     }
+  //   });
+  // });
 
   //projects
   const projects = getCurrentProjects();
