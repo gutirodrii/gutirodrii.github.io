@@ -15,6 +15,13 @@ function nextProject() {
   projectIndex++;
   render();
 }
+function previousProject(){
+  if(projectIndex <= 0){
+    projectIndex = db.projects.length;
+  }
+  projectIndex--;
+  render();
+}
 
 // FUNCION LOAD CON PROMESA
 
@@ -70,5 +77,5 @@ async function load() {
 
 document.addEventListener("DOMContentLoaded", () => {
   load();
-  setInterval(nextProject, 2000);
+  // setInterval(previousProject, 2000);
 });
