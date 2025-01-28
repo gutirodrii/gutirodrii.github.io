@@ -77,7 +77,7 @@ def get_playlist(channel_id):
     # Generar M3U8 playlist para el canal
     playlist_content = f"""#EXTM3U
 #EXTINF:-1,Channel {channel_id}
-http://127.0.0.1:5001/stream/{channel_id}
+https://gutiproxy.onrender.com/stream/{channel_id}
 """
     return Response(
         playlist_content,
