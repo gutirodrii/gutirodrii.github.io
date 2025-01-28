@@ -57,7 +57,9 @@ def proxy_stream(channel_id):
             retries = 3 #Numero de intentos
             for attempt in range(retries):
                 try:
+                    start_time = time.time()
                     with requests.get(stream_url, stream=True, timeout=10) as r:
+                        logger.info(f"Conexion exitosa al servidor de origen. Tiempo de respuesta: {time.time() - start_time} segundos")
                         for chunk in r.iter_content(chunk_size=65536):
                             if chunk:
                                 yield chunk
