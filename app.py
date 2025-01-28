@@ -19,7 +19,7 @@ class StreamManager:
     def get_or_create_stream(self, channel_id, credentials):
         with self.lock:
             if channel_id not in self.active_streams or \
-               time.time() - self.active_streams[channel_id]['last_access'] > 300:  # 5 min timeout
+               time.time() - self.active_streams[channel_id]['last_access'] > 10800:  # 3 horas timeout
                 
                 self.active_streams[channel_id] = {
                     'token': self._get_new_token(channel_id, credentials),
