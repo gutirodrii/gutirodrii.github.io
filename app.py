@@ -55,7 +55,7 @@ def proxy_stream(channel_id):
         
         def generate():
             with requests.get(stream_url, stream=True) as r:
-                for chunk in r.iter_content(chunk_size=8192):
+                for chunk in r.iter_content(chunk_size=65536):
                     if chunk:
                         yield chunk
         
