@@ -20,12 +20,12 @@ class StreamManager:
         with self.lock:
             if channel_id not in self.active_streams or \
                time.time() - self.active_streams[channel_id]['last_access'] > 10800:  # 3 horas timeout
-                
+                logger.info(f"Creando nuevo token para el canal {channel_id}")
                 self.active_streams[channel_id] = {
                     'token': self._get_new_token(channel_id, credentials),
                     'last_access': time.time()
                 }
-            
+            logger.info(f"Retornando token existente para el canal {channel_id}")
             self.active_streams[channel_id]['last_access'] = time.time()
             return self.active_streams[channel_id]['token']
     
