@@ -54,11 +54,20 @@ def proxy_stream(channel_id):
         print(stream_url)
         
         def generate():
-            with requests.get(stream_url, stream=True) as r:
-                for chunk in r.iter_content(chunk_size=65536):
-                    if chunk:
-                        yield chunk
-        
+            retries = 3 #Numero de intentos
+            for attempt in range(retries):
+                try:
+                    with requests.get(stream_url, stream=True, timeout=10) as r:
+                        for chunk in r.iter_content(chunk_size=65536):
+                            if chunk:
+                                yield chunk
+                    break #Si se obtiene el token, se puede salir del bucle
+                except Exception as e:
+                    logger.error(f"Error en el intento {attempt+1} de {retries}: {str(e)}")
+                    if attempt == retries-1:
+                        raise #Relanzar la excepción si se llega al final de los intentos
+                    time.sleep(1) #Esperar 1 segundo antes de intentar nuevamente
+                    
         return Response(
             stream_with_context(generate()),
             content_type='video/mp2t',
