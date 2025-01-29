@@ -2,8 +2,8 @@ from flask import Flask, Response, stream_with_context
 import requests
 import logging
 from urllib.parse import urljoin
-import m3u8
-import threading
+from concurrent.futures import ThreadPoolExecutor
+from threading import Lock
 import time
 import os
 
@@ -14,7 +14,8 @@ logger = logging.getLogger(__name__)
 class StreamManager:
     def __init__(self):
         self.active_streams = {}
-        self.lock = threading.Lock()
+        self.lock = Lock()
+        self.executor = ThreadPoolExecutor(max_workers=5)
         
     def get_or_create_stream(self, channel_id, credentials):
         with self.lock:
@@ -39,6 +40,7 @@ class StreamManager:
             return response.url
         except Exception as e:
             logger.error(f"Error getting stream token for channel {channel_id}: {str(e)}")
+            raise
 
 stream_manager = StreamManager()
 
